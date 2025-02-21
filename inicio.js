@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Listener para o botão de deslogar
     document.querySelector(".deslogando").addEventListener("click", function() {
         sessionStorage.clear();  // Limpa a sessão
-        window.location.href = "verificacao.html";  // Redireciona para a página de login
+        window.location.href = "index.html";  // Redireciona para a página de login
     });
 
     // Verificar se o usuário está logado
@@ -39,7 +39,7 @@ function checkLogin() {
     var loggedInUser = sessionStorage.getItem('loggedInUser');  // Verifica se o nome do usuário está no sessionStorage
     
     if (!loggedInUser) {
-        window.location.href = "verificacao.html";  // Redireciona para a página de login
+        window.location.href = "index.html";  // Redireciona para a página de login
     }
 }
 
@@ -63,6 +63,6 @@ function verifyLoggedInUser() {
             document.getElementById("card7").style.display = "none"; // Gerenciamento de Chamados
         }
     } else {
-        window.location.href = "verificacao.html";  // Redireciona para a página de login
+        window.location.href = "index.html";  // Redireciona para a página de login
     }
 }
