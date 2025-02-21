@@ -59,7 +59,7 @@ function checkUserInFirebase(enteredLdap, enteredCode) {
 
                     // Redireciona para a página principal após 2 segundos
                     setTimeout(function() {
-                        window.location.href = "/Projetc/inicio.html";  // Redireciona para a página principal
+                        window.location.href = "https://oms-prime.github.io/Projetc/inicio.html";  // Redireciona para a página principal
                     }, 2000);  // 2000 ms = 2 segundos
 
                 } else {
