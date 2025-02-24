@@ -109,7 +109,7 @@ if (loggedInUser) {
     consultarChamadosPorGestor(loggedInUser);
 } else {
     // Se não houver usuário logado, redireciona para a página de login
-    window.location.href = "verificacao";
+    window.location.href = "index.html";
 }
 
 // Script para alternar a visibilidade do menu hambúrguer

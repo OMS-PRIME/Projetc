@@ -31,7 +31,7 @@ const loggedInUser = sessionStorage.getItem("loggedInUser");
 if (loggedInUser) {
     document.getElementById("welcomeMessage").textContent = "Bem-vindo, " + loggedInUser + "!";
 } else {
-    window.location.href = "verificacao"; // Redireciona para o login se não houver um usuário logado
+    window.location.href = "index.html"; // Redireciona para o login se não houver um usuário logado
 }
 
 // Função para exibir resultados no front-end

@@ -31,7 +31,7 @@ if (loggedInUser) {
     carregarColaboradores(loggedInUser);
 } else {
     alert("Você não está logado. Redirecionando para a página de login.");
-    window.location.href = "verificacao";
+    window.location.href = "index.html";
 }
 
 // Função para carregar colaboradores associados ao gestor

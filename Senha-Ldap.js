@@ -105,20 +105,21 @@ if (loggedInUser) {
     document.getElementById("gestor-name").value = loggedInUser;
 } else {
     // Se não houver usuário logado, redireciona para a página de login
-    window.location.href = "verificacao";
+    window.location.href = "index.html.html";
 }
 
 // Evento de clique no botão de busca
-document.getElementById('search-gestor-button').addEventListener('click', () => {
-    const gestorName = document.getElementById('gestor-name').value.trim(); // Agora usa o nome do gestor do input
-    const dataFiltro = document.getElementById('date-filter').value;
+document.getElementById('search-date-button').addEventListener('click', () => {
+    const gestorName = document.getElementById('gestor-name').value.trim(); // Nome do gestor
+    const dataFiltro = document.getElementById('date-filter').value; // Data selecionada
 
     if (gestorName) {
-        consultarChamadosPorGestor(gestorName, dataFiltro); // Consulta os chamados com filtro de data
+        consultarChamadosPorGestor(gestorName, dataFiltro); // Passa o nome do gestor e a data para a consulta
     } else {
         alert('Por favor, insira o nome do gestor para buscar.');
     }
 });
+
 
         // Função de alternância do menu hambúrguer
         const menuToggle = document.getElementById('menuToggle');

@@ -85,5 +85,5 @@ if (loggedInUser) {
     document.getElementById("welcomeMessage").textContent = "Bem-vindo, " + loggedInUser + "!";
 } else {
     // Se não houver usuário logado, redireciona para a página de login
-    window.location.href = "verificacao";
+    window.location.href = "index.html";
 }
