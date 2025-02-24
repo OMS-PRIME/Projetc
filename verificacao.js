@@ -63,7 +63,7 @@ function checkUserInFirebase(enteredLdap, enteredCode) {
                     }, 2000);  // 2000 ms = 2 segundos
 
                 } else {
-                    alert("Você não está cadastrado, consulte o desenvolvedor.");  // Exibe uma mensagem de erro se a senha ou LDAP estiverem incorretos
+                    alert("Código LDAP ou senha inválidos.");  // Exibe uma mensagem de erro se a senha ou LDAP estiverem incorretos
                 }
             });
         } else {
