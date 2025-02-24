@@ -19,44 +19,70 @@
 
 <div class="card-container">
     <!-- Card 2 -->
-    <div class="card" id="card2" onclick="redirectToPage('Solicitar Ldap')">
+    <div class="card" id="card2">
         <div class="loading">Solicitar Senha LDAP</div>
-        <a href="Solicitar Ldap.html"><img src="Projetc/Chave Ldap.png"></a>
-        
+        <img src="Chave Ldap.png" id="img-card2">
     </div>
 
     <!-- Card 3 -->
-    <div class="card" id="card3" onclick="redirectToPage('Base CD')">
+    <div class="card" id="card3">
         <div class="loading">Base CD <br> - </div>
-        <a href="Base CD.html"><img src="Projetc/Dhl logo.png" style="margin-top: 30%;"></a>
+        <img src="Dhl logo.png" style="margin-top: 30%;" id="img-card3">
     </div>
 
     <!-- Card 4 -->
-    <div class="card" id="card4" onclick="redirectToPage('Status do chamado')">
+    <div class="card" id="card4">
         <div class="loading">Status do chamado <br>-</div>
-        <a href="Status do chamado.html"><img src="Projetc/Status.png"></a>
+        <img src="Status.png" id="img-card4">
     </div>
 
     <!-- Card 5 -->
-    <div class="card" id="card5" onclick="redirectToPage('Senha-Ldap')">
+    <div class="card" id="card5">
         <div class="loading">Ldap/Senha <br>-</div>
-        <a href="Senha-Ldap.html"><img src="Projetc/authorization.png"></a>
+        <img src="authorization.png" id="img-card5">
     </div>
 
     <!-- Card 6 -->
-    <div class="card" id="card6" onclick="redirectToPage('Alteração-de-missão')">
+    <div class="card" id="card6">
         <div class="loading">Alteração de missão</div>
-        <a href="Alteração-de-missão.html"><img src="Projetc/Altera Missão.png"></a>
+        <img src="Altera Missão.png" id="img-card6">
     </div>
 
     <!-- Card 7 -->
-    <div class="card" id="card7" onclick="redirectToPage('GerenciamentoChamado')">
+    <div class="card" id="card7">
         <div class="loading">Gerenciamento de Chamado</div>
-        <a href="GerenciamentoChamado.html"><img src="Projetc/Gerenciamento.png"></a>
+        <img src="Gerenciamento.png" id="img-card7">
     </div>
 </div>
 
-<script type="module" src="inicio.js"></script>
+<script type="module" src="inicio.js">
+
+    // Função para redirecionar para a página específica
+    function redirectToPage(page) {
+        window.location.href = page + ".html";
+    }
+
+    // Atribuir eventos de clique nas imagens
+    document.getElementById("img-card2").onclick = function() {
+        redirectToPage("Solicitar Ldap");
+    };
+    document.getElementById("img-card3").onclick = function() {
+        redirectToPage("Base CD");
+    };
+    document.getElementById("img-card4").onclick = function() {
+        redirectToPage("Status do chamado");
+    };
+    document.getElementById("img-card5").onclick = function() {
+        redirectToPage("Senha-Ldap");
+    };
+    document.getElementById("img-card6").onclick = function() {
+        redirectToPage("Alteração-de-missão");
+    };
+    document.getElementById("img-card7").onclick = function() {
+        redirectToPage("GerenciamentoChamado");
+    };
+    
+</script>
 
 </body>
 </html>
