@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Listener para o botão de deslogar
     document.querySelector(".deslogando").addEventListener("click", function() {
         sessionStorage.clear();  // Limpa a sessão
-        window.location.href = "index.html.html";  // Redireciona para a página de login
+        window.location.href = "index.html";  // Redireciona para a página de login
     });
 
     // Verificar se o usuário está logado
